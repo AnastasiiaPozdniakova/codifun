@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function test()
+{
+	var c  = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.moveTo(0,0);
+	ctx.fillStyle = "navy";
+	ctx.fillRect(0,0, 300, 100 );
+	ctx.fillStyle = "yellow";
+	ctx.fillRect(0,100, 300, 100 );
+}
+
+</script>
+
+</head>
+<body>
+
+<canvas id="myCanvas" width="300" height="200" style="border:5px solid #00FF00;">
+Your browser does not support the HTML canvas tag.
+</canvas>
+
+<button type="button" value="test" onclick="test();">
+	Натисніть щоб намалювати	
+</button>
+
+
+
+
+</body>
+</html>

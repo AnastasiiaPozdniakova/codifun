@@ -3,6 +3,9 @@
 <html>
 <head> 
 <title> Codifun </title>
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -37,28 +40,31 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
  
         <td> 
 		
-		<ul>
-		 <li> 
-		 <p> 
-		 <a href= "file:///C:/Users/Dell/Desktop/CodifunOld/Ex.%20%236%20-%20Resources-20200422T201416Z-001/Ex.%20%236%20-%20Resources/index_7.html"> 
+		<ul id="nav-menu">
+		 <li class="nav-item"> 
+		
+		 <a href= "index.html"> 
 		 Головна сторінка </a>
-		 </p> 
 		 </li>
+		 <li  class="nav-item"> 
+		 <a href="pages/interesting_facts.html">Цікаві факти</a>
+		 </li>
+		 <li class="nav-item"> <a href="pages/contacts.html">Контакти</a> </li>
+		 <li class="nav-item"> <a href="pages/form.html"> <b> Заповніть форму </b> </a> </li>
+
+
+		 
+		 
+		 
 		</ul>
 		
-		<ul>
-
-		<li>пункт меню 2</li>
-		<li>пункт меню 3</li>
-		<li>пункт меню 4</li>
-		
-		</ul> 
-		
+	
 		</td>
      
-	    <td> 
-		<h2 style="text-align:center;font-size:30px"> Where does it come from? <h2>
-		<img src="images/articol-1.png" width="100%">
+	    <td valign="top"> 
+
+		<h2 style="text-align:center;font-size:30px"   class="article-title"> Where does it come from? <h2>
+		<img src="images/articol-1.png" width="90%">
   <h6 style="color:#009688;text-align:center">Lorem Ipsum</h6>
   <p style= "color:#5f5f5f;text-align:center"> <span style="display:block">Contrary to popular belief, Lorem Ipsum is not simply random text. <br>
   It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br>
@@ -74,10 +80,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 		
         </td>
 		
-		<td> 
+		<td valign="top"> 
 		
-		<h2 style="text-align:center;font-size:30px"> Where does it come from? <h2>
-		<img src="images/articol-2.png" width="100%">
+		<h2 style="text-align:center;font-size:30px"  class="article-title"> Where does it come from? <h2>
+		<img src="images/articol-2.png" width="90%">
   <h6 style="color:#009688;text-align:center">Lorem Ipsum</h6>
   <p style= "color:#5f5f5f;text-align:center"> Contrary to popular belief, Lorem Ipsum is not simply random text. <br>
   It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br>
@@ -90,10 +96,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 		</td>
 		
 		
-		<td>
+		<td valign="top">
 		
-		<h2 style="text-align:center;font-size:30px"> Where does it come from? <h2>
-		<img src="images/articol-3.png" width="100%">
+		<h2 style="text-align:center;font-size:30px"  class="article-title"> Where does it come from? <h2>
+		<img src="images/articol-3.png" width="90%">
   <h6 style="color:#009688;text-align:center">Lorem Ipsum</h6>
   <p style= "color:#5f5f5f;text-align:center"> Contrary to popular belief, Lorem Ipsum is not simply random text. <br>
   It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br>
@@ -114,14 +120,29 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
  
   
   
-  <blockquote> Знання створюють ваше майбутнє! </blockquote>
+  <h3 id="demo" align="center"> Anastasiia Greece </h3>
+
+  <script>
+  	document.getElementById("demo").innerHTML="Знання створюють ваше майбутнє!";
+  </script>
+
+  <!--script>
+
+  	 var headingElement=document.getElementById("demo");
+  	 console.log(headingElement.innerHTML);
+  	 var newHeadingText=prompt("Please provied a new heading");
+  	 headingElement.innerHTML=newHeadingText;
+
+
+</script-->
+
   
   
   
   
   
   
-<h2> Codifun Heading </h2>
+<h2> Codifun Heading  </h2>
 
 <h3> Codifun Heading </h3>
 

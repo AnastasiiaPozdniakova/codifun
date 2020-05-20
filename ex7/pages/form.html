@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Форма з особистими даними</title>
+</head>
+<body>
+
+	
+
+<h1 style="text-align:center">Форма з особистими даними</h1>
+<div>
+	<div align="center">
+		<canvas id="myCanvas" width="300px" height="80px" style="border: 2px solid #a7a3a3"></canvas>
+
+		<canvas id="extraCanvas" width="400px" height="120px" style="border: 3px dotted #0000FF"> </canvas>
+	</div>
+
+	<h4 style="display:inline;">Натисніть щоб повернутися</h4>
+	<a href="../index.html">
+		<svg width="50px" height="50px">
+		<circle cx="25px" cy="25px" r="20px" stroke="green" stroke-width="4px" fill="yellow"/> 
+	</svg>
+	</a>
+
+
+	<form method="get">
+		Ім'я <br>
+		<input type="text" name="Ім'я"> 
+		<br>
+		Прізвище <br>
+		<input type="text" name="Прізвище"> 
+		<br><br>
+
+	    Дата народження: 
+		<input type="дати" name="дати">
+		<br><br>
+
+
+		Країна походження:
+		<select name="Origin_country">
+			<option value="1">Республіка Молдова</option>
+			<option value="2"selected>Україна </option> 
+			<option value="3">Румунія</option>
+
+		</select> <br><br>
+
+		Інтереси:<br>
+
+		<input type="checkbox" name="HTML">HTML<br>
+		<input type="checkbox" name="JavaScript">JavaScript<br>
+		<input type="checkbox" name="PHP">PHP<br>
+		<input type="checkbox" name="CSS">CSS<br> <br>
+
+		E-mail: <input type="text" name="E-mail"> <br> <br>
+
+		Password: <input type="password" name="pass"> <br> <br>
+
+		Як часто бажаєте отримувати повідомлення на електрону пошту?<br>
+
+		<input type="radio" name="member" value="Щонеділі">Щонеділі<br>
+		<input type="radio" name="member" value="Щомісяця">Щомісяця<br>
+	    <input type="radio" name="member" value="Ніколи">Ніколи<br><br>
+
+	    <textarea name="my_text" rows="8" cols="50">
+	    	
+	    </textarea>
+
+	    <br>
+	    <input type="submit" name="button" value="Відправити">
+
+
+
+	</form> 
+
+</div>
+
+
+<script type="text/javascript">
+	
+	var c=document.getElementById("myCanvas");
+	var ctx=c.getContext("2d");
+	ctx.font="25px Arial";
+	ctx.fillText("Hello world",75,45);
+
+	var c2 = document.getElementById("extraCanvas");
+	var ctx2=c2.getContext("2d");
+	ctx2.font="35px Arial";
+	ctx2.fillText("Hello Greece",45,75);                                                
+
+
+
+</script>
+
+</body>
+</html>
