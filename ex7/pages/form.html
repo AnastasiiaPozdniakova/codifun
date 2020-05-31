@@ -1,29 +1,58 @@
+
+
 <!DOCTYPE html>
+
 <html>
-<head>
-	<title>Форма з особистими даними</title>
+<head> 
+<title> Codifun </title>
+
+
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
+
 <body>
 
-	
+<header>
 
-<h1 style="text-align:center">Форма з особистими даними</h1>
+ <h1>Codifun Inspire Me
+  </h1> 
+
+<a href="https://www.codifun.com/learn/course/50/lesson/5/video" title="Have fun!" > <img src="logo.png" alt= "Codifun"> </a>
+
+ <p> <em> What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+ when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+ It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+ It was popularised in the 1960s with the release of Letraset sheets containing 
+ Lorem Ipsum passages, and more recently with desktop publishing 
+ software like Aldus PageMaker including versions of Lorem Ipsum.</em> </p>
+ </header>
+ 
+ 		
+<nav> <a href= "../index.html"> 
+		 Головна сторінка </a>
+		
+		 <a href="interesting_facts.html">Цікаві факти</a>
+		  <a href="address.html">Контакти</a> 
+		  <a href="form.html"> Заповніть форму</a> 
+</nav>	
+		
+		
+<section>
+
+	<h1 style="text-align:center">Форма з особистими даними &#x2663 </h1>
 <div>
 	<div align="center">
 		<canvas id="myCanvas" width="300px" height="80px" style="border: 2px solid #a7a3a3"></canvas>
 
-		<canvas id="extraCanvas" width="400px" height="120px" style="border: 3px dotted #0000FF"> </canvas>
+	
 	</div>
 
-	<h4 style="display:inline;">Натисніть щоб повернутися</h4>
-	<a href="../index.html">
-		<svg width="50px" height="50px">
-		<circle cx="25px" cy="25px" r="20px" stroke="green" stroke-width="4px" fill="yellow"/> 
-	</svg>
-	</a>
 
-
-	<form method="get">
+	<form method="post" action="http://example.com">
 		Ім'я <br>
 		<input type="text" name="Ім'я"> 
 		<br>
@@ -71,25 +100,45 @@
 
 
 	</form> 
+  
 
-</div>
+<footer>
+	<h2 id="demo" align="center"> Anastasiia Greece </h3>
+</footer>
+  
+<script>
+  	document.getElementById("demo").innerHTML="Знання створюють ваше майбутнє!";
+</script> 
+
+  
 
 
-<script type="text/javascript">
+</section> 
+		 
+		 <script type="text/javascript">
 	
 	var c=document.getElementById("myCanvas");
 	var ctx=c.getContext("2d");
 	ctx.font="25px Arial";
 	ctx.fillText("Hello world",75,45);
 
-	var c2 = document.getElementById("extraCanvas");
-	var ctx2=c2.getContext("2d");
-	ctx2.font="35px Arial";
-	ctx2.fillText("Hello Greece",45,75);                                                
+                                               
 
 
 
-</script>
+         </script>
+		
+		
+	
+
+		
+
+
+
+
+
+
+
 
 </body>
 </html>
